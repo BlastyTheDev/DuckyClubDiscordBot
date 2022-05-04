@@ -8,7 +8,7 @@ import javax.security.auth.login.LoginException;
 public final class DiscordBot {
 
     public DiscordBot() throws LoginException, InterruptedException {
-        JDA jda = JDABuilder.createDefault("OTMyMTMxODc0OTA4ODE1NDEw.YeOhdQ.XKPPj-QElp77BiNXR1_kUacYvDI").build().awaitReady();
+        JDA jda = JDABuilder.createDefault("dont look lol").build().awaitReady();
     }
 
 }
