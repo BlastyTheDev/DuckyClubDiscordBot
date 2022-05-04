@@ -14,6 +14,7 @@ public final class DiscordBot {
         Guild guild = jda.getGuildById("747237441026523147");
         jda.addEventListener(new CommandManager());
         if (guild != null) {
+            guild.upsertCommand("serverinfo", "Get the Duckycraft Minecraft server information").queue();
         }
     }
 
