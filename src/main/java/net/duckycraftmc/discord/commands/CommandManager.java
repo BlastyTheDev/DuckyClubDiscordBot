@@ -4,13 +4,26 @@ import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEve
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class CommandManager extends ListenerAdapter {
+
+    private final List<Command> commands = new ArrayList<>();
+
+    public CommandManager() {
+        getCommands().add(new ServerInfoCommand());
+    }
 
     @Override
     public void onSlashCommandInteraction(@NotNull SlashCommandInteractionEvent e) {
         String name = e.getName();
-        switch (name) {
-        }
+        for (Command command : getCommands())
+            if (name.equals(command.getName())) command.execute(e);
+    }
+
+    public List<Command> getCommands() {
+        return commands;
     }
 
 }
