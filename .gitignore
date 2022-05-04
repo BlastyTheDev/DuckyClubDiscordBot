@@ -1,0 +1,11 @@
+/target/classes/net/duckycraftmc/discord/commands/Command.class
+/target/classes/net/duckycraftmc/discord/commands/CommandManager.class
+/target/classes/net/duckycraftmc/discord/Main.class
+/target/classes/net/duckycraftmc/discord/commands/ServerInfoCommand.class
+/target/classes/net/duckycraftmc/discord/DiscordBot.class
+.gitignore
+/.idea/compiler.xml
+/.idea/jarRepositories.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
