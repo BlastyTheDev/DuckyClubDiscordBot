@@ -11,7 +11,6 @@ public class ServerInfoCommand extends Command {
 
     @Override
     public void execute(SlashCommandInteractionEvent e) {
-        e.deferReply().queue();
         e.reply("**Server Address:** `duckycraftmc.net`").setEphemeral(true).queue();
     }
 
