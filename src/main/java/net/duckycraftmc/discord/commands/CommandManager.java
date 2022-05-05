@@ -14,6 +14,9 @@ public class CommandManager extends ListenerAdapter {
     public CommandManager() {
         getCommands().add(new ServerInfoCommand());
         getCommands().add(new AnnounceCommand());
+        getCommands().add(new JoinCommand());
+        getCommands().add(new StopCommand());
+        getCommands().add(new QueueCommand());
     }
 
     @Override
