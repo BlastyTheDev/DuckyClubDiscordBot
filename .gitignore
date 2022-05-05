@@ -9,3 +9,11 @@
 /.idea/misc.xml
 /.idea/vcs.xml
 /.idea/workspace.xml
+/target/classes/net/duckycraftmc/discord/commands/AnnounceCommand.class
+/target/bot.bat
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/discord-1.0.jar
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+/target/classes/META-INF/MANIFEST.MF
+/target/maven-archiver/pom.properties
