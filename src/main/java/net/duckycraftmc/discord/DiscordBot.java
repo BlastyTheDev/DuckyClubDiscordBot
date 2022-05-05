@@ -24,6 +24,11 @@ public final class DiscordBot {
                     new OptionData(OptionType.STRING, "message", "The message to send", true),
                     new OptionData(OptionType.BOOLEAN, "ping", "Whether Duckycraft Pings should be mentioned", true)
             ).queue();
+            guild.upsertCommand("join", "Make the bot join your voice channel").queue();
+            guild.upsertCommand("stop", "Make the bot disconnect from its current voice channel").queue();
+            guild.upsertCommand("queue", "Add a song to the queue").addOptions(
+                    new OptionData(OptionType.STRING, "link", "Link of the soundtrack to add", true)
+            ).queue();
         }
     }
 
