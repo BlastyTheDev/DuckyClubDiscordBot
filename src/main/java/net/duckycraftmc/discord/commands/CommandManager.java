@@ -13,6 +13,7 @@ public class CommandManager extends ListenerAdapter {
 
     public CommandManager() {
         getCommands().add(new ServerInfoCommand());
+        getCommands().add(new AnnounceCommand());
     }
 
     @Override

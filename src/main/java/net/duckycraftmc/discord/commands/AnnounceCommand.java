@@ -1,6 +1,7 @@
 package net.duckycraftmc.discord.commands;
 
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
+import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 
 public class AnnounceCommand extends Command {
 
@@ -11,8 +12,14 @@ public class AnnounceCommand extends Command {
 
     @Override
     public void execute(SlashCommandInteractionEvent e) {
-        if (e.getInteraction().getMember().getRoles().contains(e.getGuild().getRoleById("747249849535037483"))) {
-            e.reply("you have perms").setEphemeral(true).queue();
+        if (e.getMember().getRoles().contains(e.getGuild().getRoleById("747249849535037483"))) {
+            OptionMapping messageOption = e.getOption("message");
+            OptionMapping pingOption = e.getOption("ping");
+            assert messageOption != null;
+            assert pingOption != null;
+            String message = pingOption.getAsBoolean() ? messageOption.getAsString() + "\n<@&915545654623883264>" :
+                    messageOption.getAsString();
+            e.reply(message).queue();
         } else e.reply("Only Owners can use this!").setEphemeral(true).queue();
     }
 
