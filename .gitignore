@@ -17,3 +17,10 @@
 /target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
 /target/classes/META-INF/MANIFEST.MF
 /target/maven-archiver/pom.properties
+/target/classes/net/duckycraftmc/discord/music/AudioPlayerSendHandler.class
+/target/classes/net/duckycraftmc/discord/music/GuildMusicManager.class
+/target/classes/net/duckycraftmc/discord/commands/JoinCommand.class
+/target/classes/net/duckycraftmc/discord/music/PlayerManager$1.class
+/target/classes/net/duckycraftmc/discord/music/PlayerManager.class
+/target/classes/net/duckycraftmc/discord/commands/StopCommand.class
+/target/classes/net/duckycraftmc/discord/music/TrackScheduler.class
