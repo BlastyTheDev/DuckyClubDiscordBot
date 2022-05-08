@@ -3,10 +3,6 @@ package net.duckycraftmc.discord.commands;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 
-import java.util.Collections;
-
-import static net.dv8tion.jda.api.entities.Message.MentionType.ROLE;
-
 public class AnnounceCommand extends Command {
 
     @Override
@@ -21,9 +17,9 @@ public class AnnounceCommand extends Command {
             OptionMapping pingOption = e.getOption("ping");
             assert messageOption != null;
             assert pingOption != null;
-            String message = pingOption.getAsBoolean() ? messageOption.getAsString() + "\n<@&915545654623883264>" :
+            String message = pingOption.getAsBoolean() ? messageOption.getAsString() + "\n<@&907588019471667210>" :
                     messageOption.getAsString();
-            e.reply(message).allowedMentions(Collections.singleton(ROLE)).queue();
+            e.reply(message).mentionRoles("907588019471667210").allowedMentions(null).queue();
         } else e.reply("Only Owners can use this!").setEphemeral(true).queue();
     }
 

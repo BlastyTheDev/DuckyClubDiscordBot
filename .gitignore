@@ -24,3 +24,5 @@
 /target/classes/net/duckycraftmc/discord/music/PlayerManager.class
 /target/classes/net/duckycraftmc/discord/commands/StopCommand.class
 /target/classes/net/duckycraftmc/discord/music/TrackScheduler.class
+/target/discord-1.0-jar-with-dependencies.jar
+/target/classes/net/duckycraftmc/discord/commands/QueueCommand.class
