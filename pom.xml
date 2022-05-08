@@ -7,7 +7,7 @@
     <groupId>net.duckycraftmc</groupId>
     <artifactId>discord</artifactId>
     <version>1.0</version>
-    <name>DuckyClubDiscordBot</name>
+
     <packaging>jar</packaging>
 
     <properties>

@@ -17,9 +17,9 @@ public class AnnounceCommand extends Command {
             OptionMapping pingOption = e.getOption("ping");
             assert messageOption != null;
             assert pingOption != null;
-            String message = pingOption.getAsBoolean() ? messageOption.getAsString() + "\n<@&907588019471667210>" :
+            String message = pingOption.getAsBoolean() ? messageOption.getAsString() + "\n<@&915545654623883264>" :
                     messageOption.getAsString();
-            e.reply(message).mentionRoles("907588019471667210").allowedMentions(null).queue();
+            e.reply(message).allowedMentions(null).queue();
         } else e.reply("Only Owners can use this!").setEphemeral(true).queue();
     }
 
