@@ -26,3 +26,8 @@
 /target/classes/net/duckycraftmc/discord/music/TrackScheduler.class
 /target/discord-1.0-jar-with-dependencies.jar
 /target/classes/net/duckycraftmc/discord/commands/QueueCommand.class
+/target/classes/net/duckycraftmc/discord/listeners/EmoteOnlyMode.class
+/target/classes/net/duckycraftmc/discord/commands/EmoteOnlyModeCommand.class
+/.idea/inspectionProfiles/Project_Default.xml
+/target/classes/net/duckycraftmc/discord/commands/SkipCommand.class
+/target/classes/net/duckycraftmc/discord/listeners/MessageLogger.class

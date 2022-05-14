@@ -1,9 +1,10 @@
 package net.duckycraftmc.discord;
 
 import net.duckycraftmc.discord.commands.CommandManager;
+import net.duckycraftmc.discord.listeners.EmoteOnlyMode;
+import net.duckycraftmc.discord.listeners.MessageLogger;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
-import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
@@ -14,8 +15,7 @@ public final class DiscordBot {
 
     public DiscordBot() throws LoginException, InterruptedException {
         JDA jda = JDABuilder.createDefault("")
-                .setActivity(Activity.watching("myself become completed"))
-                .addEventListeners(new CommandManager())
+                .addEventListeners(new CommandManager(), new MessageLogger(), new EmoteOnlyMode())
                 .build().awaitReady();
         Guild guild = jda.getGuildById("747237441026523147");
         if (guild != null) {
@@ -28,6 +28,10 @@ public final class DiscordBot {
             guild.upsertCommand("stop", "Make the bot disconnect from its current voice channel").queue();
             guild.upsertCommand("queue", "Add a song to the queue").addOptions(
                     new OptionData(OptionType.STRING, "link", "Link of the soundtrack to add", true)
+            ).queue();
+            guild.upsertCommand("skip", "Skip the current track").queue();
+            guild.upsertCommand("emoteonlymode", "Toggle Emote Only Mode").addOptions(
+                    new OptionData(OptionType.BOOLEAN, "enabled", "Whether emote only mode should be on", true)
             ).queue();
         }
     }

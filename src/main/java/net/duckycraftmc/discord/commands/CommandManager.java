@@ -17,6 +17,8 @@ public class CommandManager extends ListenerAdapter {
         getCommands().add(new JoinCommand());
         getCommands().add(new StopCommand());
         getCommands().add(new QueueCommand());
+        getCommands().add(new SkipCommand());
+        getCommands().add(new EmoteOnlyModeCommand());
     }
 
     @Override
