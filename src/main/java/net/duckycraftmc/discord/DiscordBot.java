@@ -33,6 +33,7 @@ public final class DiscordBot {
             guild.upsertCommand("emoteonlymode", "Toggle Emote Only Mode").addOptions(
                     new OptionData(OptionType.BOOLEAN, "enabled", "Whether emote only mode should be on", true)
             ).queue();
+            guild.upsertCommand("help", "Show all commands and uses for the bot").queue();
         }
     }
 
