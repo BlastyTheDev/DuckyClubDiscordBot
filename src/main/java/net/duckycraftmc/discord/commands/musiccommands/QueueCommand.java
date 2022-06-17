@@ -1,5 +1,6 @@
-package net.duckycraftmc.discord.commands;
+package net.duckycraftmc.discord.commands.musiccommands;
 
+import net.duckycraftmc.discord.commands.Command;
 import net.duckycraftmc.discord.music.PlayerManager;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.OptionMapping;

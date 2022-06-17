@@ -1,5 +1,9 @@
 package net.duckycraftmc.discord.commands;
 
+import net.duckycraftmc.discord.commands.musiccommands.JoinCommand;
+import net.duckycraftmc.discord.commands.musiccommands.QueueCommand;
+import net.duckycraftmc.discord.commands.musiccommands.SkipCommand;
+import net.duckycraftmc.discord.commands.musiccommands.StopCommand;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.jetbrains.annotations.NotNull;
