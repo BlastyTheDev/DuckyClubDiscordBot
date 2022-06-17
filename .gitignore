@@ -31,3 +31,5 @@
 /.idea/inspectionProfiles/Project_Default.xml
 /target/classes/net/duckycraftmc/discord/commands/SkipCommand.class
 /target/classes/net/duckycraftmc/discord/listeners/MessageLogger.class
+/target/classes/net/duckycraftmc/discord/commands/HelpCommand.class
+/.idea/uiDesigner.xml
