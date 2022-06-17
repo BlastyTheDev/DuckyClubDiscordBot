@@ -33,3 +33,7 @@
 /target/classes/net/duckycraftmc/discord/listeners/MessageLogger.class
 /target/classes/net/duckycraftmc/discord/commands/HelpCommand.class
 /.idea/uiDesigner.xml
+/target/classes/net/duckycraftmc/discord/commands/musiccommands/JoinCommand.class
+/target/classes/net/duckycraftmc/discord/commands/musiccommands/QueueCommand.class
+/target/classes/net/duckycraftmc/discord/commands/musiccommands/SkipCommand.class
+/target/classes/net/duckycraftmc/discord/commands/musiccommands/StopCommand.class

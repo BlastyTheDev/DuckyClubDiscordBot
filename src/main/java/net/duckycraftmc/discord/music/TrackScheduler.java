@@ -27,6 +27,13 @@ public class TrackScheduler extends AudioEventAdapter {
         this.player.startTrack(this.queue.poll(), false);
     }
 
+    public void clearQueue(boolean stopPlaying) {
+        for (AudioTrack at : queue)
+            queue.remove(at);
+        if (stopPlaying)
+            nextTrack();
+    }
+
     @Override
     public void onTrackEnd(AudioPlayer player, AudioTrack track, AudioTrackEndReason endReason) {
         if (endReason.mayStartNext)
