@@ -15,7 +15,7 @@ public class ClearQueueCommand extends Command {
     @Override
     public void execute(SlashCommandInteractionEvent e) {
         assert e.getGuild() != null;
-        boolean stopPlaying = e.getOption("stopPlaying").getAsBoolean();
+        boolean stopPlaying = e.getOption("stopplaying").getAsBoolean();
         PlayerManager.getInstance().getMusicManager(e.getGuild()).scheduler.clearQueue(stopPlaying);
         if (stopPlaying)
             e.reply("Cleared the queue and ended the current track.").queue();

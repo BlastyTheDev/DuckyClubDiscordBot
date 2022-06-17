@@ -32,7 +32,7 @@ public final class DiscordBot {
                     new OptionData(OptionType.STRING, "link", "Link of the soundtrack to add", true)
             ).queue();
             guild.upsertCommand("clearqueue", "Clear the song queue").addOptions(
-                    new OptionData(OptionType.BOOLEAN, "stopPlaying", "Whether the current track should also be ended", true)
+                    new OptionData(OptionType.BOOLEAN, "stopplaying", "Whether the current track should also be ended", true)
             ).queue();
             guild.upsertCommand("skip", "Skip the current track").queue();
 
