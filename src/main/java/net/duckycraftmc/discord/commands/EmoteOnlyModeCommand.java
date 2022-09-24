@@ -3,6 +3,7 @@ package net.duckycraftmc.discord.commands;
 import net.duckycraftmc.discord.listeners.EmoteOnlyMode;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 
+@Deprecated
 public class EmoteOnlyModeCommand extends Command {
 
     @Override

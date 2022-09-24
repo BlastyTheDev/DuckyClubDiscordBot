@@ -11,7 +11,7 @@ public class HelpCommand extends Command {
 
     @Override
     public void execute(SlashCommandInteractionEvent e) {
-        e.reply("This command is under development. If you need it completed now, please ask Blasty - the developer of this bot.").setEphemeral(true).queue();
+        e.reply("This command is under development. If you need it completed now, please contact Blasty - the developer of this bot.").setEphemeral(true).queue();
     }
 
 }
