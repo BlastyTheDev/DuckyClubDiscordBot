@@ -5,6 +5,8 @@ import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEve
 
 public class GuildCommand extends Command {
 
+    // TODO: Complete the Guild Management system - To be ready for next Duckycraft season
+
     @Override
     public String getName() {
         return "guild";
