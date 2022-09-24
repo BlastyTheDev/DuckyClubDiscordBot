@@ -25,6 +25,11 @@ public class GuildCommand extends Command {
             }
             case "leave" -> {
             }
+            case "settings" -> {
+            }
+            // Owners Only
+            case "admin" -> {
+            }
         }
     }
 
